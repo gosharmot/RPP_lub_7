@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeAdminPanel"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="53dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/crossButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/tertiary_text_light"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/editButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/transparent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/mainSecondAdapterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@android:color/widget_edittext_dark"
+                android:textSize="32dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/mainSecondAdapterDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainSecondAdapterName"
+                android:gravity="center"
+                android:text="Description"
+                android:textColor="@android:color/widget_edittext_dark"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/mainSecondAdapterCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainSecondAdapterDescription"
+                android:gravity="center"
+                android:text="Count"
+                android:textColor="@android:color/widget_edittext_dark"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/mainSecondAdapterPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainSecondAdapterCount"
+                android:gravity="center"
+                android:text="Price"
+                android:textColor="@android:color/widget_edittext_dark"
+                tools:ignore="MissingConstraints" />
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</RelativeLayout>
